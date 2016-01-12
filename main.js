@@ -18,4 +18,39 @@ jQuery(document).ready(function($) {
 		window.devicePixelRatio > 1 || (window.matchMedia && window.matchMedia("(-webkit-min-device-pixel-ratio: 1.5),(-moz-min-device-pixel-ratio: 1.5),(min-device-pixel-ratio: 1.5)").matches)
 	);
 	
+	
+	var indexOfMainNumber = 0; 
+
+jQuery(document).ready(function ($) {
+    $.fn.qtip.styles.orangered = {
+        width: 195,
+        padding: 25,
+        background: '#ed8b00',
+        color: '#feffff',
+        tip: true,
+        border: {
+            width: 0,
+            color: '#ed8b00'
+        }
+    }
+});
+
+/**
+ * Override parent theme methods
+ */
+function addTooltipText(tooltipElement, tooltipText) {
+    tooltipElement.qtip({
+        content: '<p class="tooltip-text">' + tooltipText + '</p>',
+        //hide: false,
+        position: {
+            corner: {
+                target: 'leftMiddle',
+                tooltip: 'rightMiddle'
+            }
+        },
+        style: {
+            name: 'orangered'
+        }
+    });
+}
 });

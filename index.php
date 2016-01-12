@@ -4,12 +4,11 @@
 	</head>
 	<body>
 		<h1>Janin tekstiä</h1>
-		<h2>Janin toinen teksti</h2>
-		<h4>testiätestääiä</h4>
-		<h3>Janin kolmas testi</h3>
+
 		<h4>testiätestiä</h4>
 		<h5>uusi testi</h5>
 		<h5>Janin 12.1.2016 testi</h5>
+		<h6>Janin 12.1.2016 2222</h5>
 	</body>
 
 </html>
